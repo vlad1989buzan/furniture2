@@ -1,0 +1,185 @@
+.benefits {
+    margin-top: 100px;
+    padding-left: $pm;
+    padding-right: $pm;
+
+    h3 {
+        color: $fcolor2;
+        position: relative;
+        margin-bottom: 18px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            background-color: $bgcolor;
+            height: 3px;
+            left: 0;
+            bottom: -3px;
+        }
+    }
+    h2 {
+        margin-bottom: 52px;
+    }
+
+    .benefits-slider__item {
+        position: relative;
+    }
+
+    .benefits-slider__item-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 77.7%;
+
+        left: 0;
+        right: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow-y: hidden;
+    }
+    p {
+        font-family: "Proxima Nova Regular";
+        color: $fcolor2;
+        transform: translateY(60px);
+    }
+}
+
+.benefits-slider__item:hover .benefits-slider__item-info {
+    transform: translateY(-60px);
+    p {
+        transform: translateY(0);
+    }
+}
+
+#navhere_benefits-slider {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits > div {
+    position: relative;
+}
+
+#navhere_benefits-slider{
+    visibility: hidden;
+}
+
+
+#navhere_benefits-slider > button.owl-prev,
+#navhere_benefits-slider > button.owl-next {
+    visibility: visible;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $fcolor2;
+    border-radius: 50%;
+    background-color: transparent !important;
+    color: $fcolor2;
+    outline: none;
+    font-size: 20px;
+    
+}
+
+#navhere_benefits-slider > button.owl-prev:hover,
+#navhere_benefits-slider > button.owl-next:hover {
+    background-color: $fcolor2 !important;
+    color: $fcolor !important;
+}
+
+#navhere_benefits-slider > button.owl-prev > div,
+#navhere_benefits-slider > button.owl-next > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1680px) {
+    .benefits-slider__item-info {
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .benefits-slider__item-info {
+        h3{
+            font-size: 24px;
+        }
+    p {
+        transform: translateY(60px);
+    }
+}
+
+.benefits-slider__item:hover .benefits-slider__item-info {
+    transform: translateY(-60px);
+    p {
+        transform: translateY(-10px);
+    }
+}
+}
+
+@media (max-width: 800px){
+    .benefits {
+        margin-top: 250px;
+    }
+}
+@media (max-width: 600px){
+    #navhere_benefits-slider > button.owl-prev,
+        #navhere_benefits-slider > button.owl-next{
+            display: none;
+            visibility: hidden;
+        }
+        .benefits-slider.owl-loaded.owl-drag > div.owl-dots {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 35px;
+            z-index: 1;
+            left: 0;
+            right: 0;
+        }
+    
+        .benefits-slider.owl-loaded.owl-drag > div.owl-dots > button.owl-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $fcolor2 !important;
+            color: $fcolor !important;
+            z-index: 1;
+            margin: 0 5px;
+        }
+        
+        .benefits-slider.owl-loaded.owl-drag > div.owl-dots > button.owl-dot.active {
+            background-color: $bgcolor !important;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    .benefits-slider__item-info {
+       padding-left: 10px;
+       padding-right: 10px;
+        h3{
+            font-size: 18px;
+        }
+    p {
+        font-size: 12px;
+    }
+}}

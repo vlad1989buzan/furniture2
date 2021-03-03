@@ -1,0 +1,75 @@
+.questions {
+    margin: 100px 0;
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+.questions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.questions-wrapper__background {
+    flex-basis: 1561px;
+    background: url(../img/questions/Rectangle175.png);
+    min-height: 675px;
+    background-position: center;
+}
+
+.questions-wrapper-form {
+    max-width: 528px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    padding: 50px 51px 50px 30px;
+    border-left: 15px solid $bgcolor;
+    background-color: $fcolor2;
+    h3 {
+        margin-bottom: 30px;
+    }
+    input {
+        margin-bottom: 15px;
+        padding: 14px 15px;
+        background: $fcolor2;
+        border: 1px solid $fcolor;
+        border-radius: 3px;
+        font-family: 'Proxima Nova Regular';
+        outline: none;
+        &:last-of-type{
+            font-family: 'Proxima Nova Bold';
+            text-transform: uppercase;
+            background-color: $bgcolor;
+            color: $fcolor2;
+            border-color: $bgcolor;
+        }
+    }
+    p{
+        font-family: 'Proxima Nova Regular';
+        
+            margin-right: 37px;
+        
+        span{
+            font-family: 'Proxima Nova Bold';
+        }
+    }
+}
+@media (max-width: 800px){
+    .questions-wrapper__background{
+        display: none;
+    }
+    .questions-wrapper-form{
+        position: relative;
+        max-width: 100%;
+        p{
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width:480px){
+    .questions{
+        margin: 50px 0;
+}
+.questions-wrapper-form{padding: 25px 25px 25px 10px;}
+}

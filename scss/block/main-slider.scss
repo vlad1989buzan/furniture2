@@ -1,0 +1,236 @@
+.slider-main {
+    position: relative;
+}
+
+.slider-main-info {
+    display: flex;
+    max-height: 100%;
+    max-width: 462px;
+    flex-direction: column;
+    align-items: center;
+    border-left: 15px solid $bgcolor;
+    padding: 99px 79px 99px 79px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 2.65%;
+    background-color: $fcolor2;
+    h1 {
+        margin-bottom: 50px;
+    }
+    h3 {
+        margin-bottom: 10px;
+    }
+    span {
+        font-family: "Proxima Nova Regular";
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 30px;
+    }
+    a {
+        text-transform: uppercase;
+        color: $fcolor2;
+        background-color: $bgcolor;
+        padding: 14px 46px;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    .counter {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    #navhere > button.owl-prev,
+    #navhere > button.owl-next {
+        width: 28px;
+        height: 28px;
+        border: 1px solid $fcolor;
+        border-radius: 50%;
+        background-color: $fcolor2;
+        outline: none;
+        font-size: 20px;
+    }
+    #navhere > button.owl-prev {
+        margin-right: 8px;
+    }
+    #navhere > button.owl-prev:hover,
+    #navhere > button.owl-next:hover {
+        background-color: $fcolor;
+        color: $fcolor2;
+    }
+    #navhere>button.owl-prev>div, #navhere>button.owl-next>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.counter2 {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    color: $fcolor2;
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 1680px) {
+    .slider-main-info {
+        padding: 79px 64px 79px 64px;
+    }
+}
+@media (max-width: 1366px) {
+    .slider-main-info {
+        padding: 59px 49px 59px 49px;
+        h1 {
+            margin-bottom: 25px;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        span {
+            font-family: "Proxima Nova Regular";
+            font-size: 36px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+        a {
+            text-transform: uppercase;
+            color: $fcolor2;
+            background-color: $bgcolor;
+            padding: 14px 46px;
+            border-radius: 3px;
+            margin-bottom: 25px;
+        }
+        .counter {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .slider-main-info {
+        max-width: 400px;
+        padding: 45px;
+        h1 {
+            font-size: 48px;
+        }
+
+        span {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        a {
+            text-transform: uppercase;
+            color: $fcolor2;
+            background-color: $bgcolor;
+            padding: 14px 46px;
+            border-radius: 3px;
+            margin-bottom: 25px;
+        }
+        .counter {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .slider-main-info {
+        max-width: 300px;
+        padding: 30px;
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 125%;
+        }
+        a {
+            font-size: 18px;
+        }
+        .counter {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .slider-main-info {
+        padding: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .slider-main-info {
+        max-height: none;
+        max-width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        .counter {
+            display: none;
+            visibility: hidden;
+        }
+
+        #navhere > button.owl-prev,
+        #navhere > button.owl-next {
+            visibility: hidden;
+            display: none;
+        }
+        a {
+            margin-bottom: 0;
+        }
+    }
+
+    .counter2 {
+        visibility: visible;
+        display: block;
+    }
+
+    .slider1.owl-loaded.owl-drag > div.owl-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 35px;
+        z-index: 1;
+        left: 0;
+        right: 0;
+    }
+
+    .slider1.owl-loaded.owl-drag > div.owl-dots > button.owl-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $fcolor2 !important;
+        color: $fcolor !important;
+        z-index: 1;
+        margin: 0 5px;
+    }
+    
+    .slider1.owl-loaded.owl-drag > div.owl-dots > button.owl-dot.active {
+        background-color: $bgcolor !important;
+    }
+}
+@media (max-width: 600px) {
+    .slider-main-info {
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        span {
+            margin-bottom: 5px;
+        }
+    }
+}

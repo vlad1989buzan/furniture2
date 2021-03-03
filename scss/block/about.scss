@@ -1,0 +1,54 @@
+.about{
+    margin: 100px 0;
+    h2{
+        margin-bottom: 50px;
+    }
+}
+
+.about-wrapper{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.about-wrapper__background{
+    flex-basis: 75.28%;
+    min-height: 675px;
+    background: url(../img/about/Rectangle174.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+}
+
+
+.about-wrapper__info{
+    max-width: 806px;
+    position: absolute;
+padding: 50px 30px 50px $pm;
+background-color: $fcolor2;
+border-right: 15px solid $bgcolor;
+
+p{
+    font-family: 'Proxima Nova Regular';
+    margin-bottom: 10px;
+    span{
+        text-transform: uppercase;
+        color: $bgcolor;
+    }
+}
+}
+
+@media (max-width:1024px){
+    .about-wrapper__background{
+        display: none;
+    }
+    .about-wrapper__info{
+        position: relative;
+        max-width: 100%;
+        padding: 0 30px 0 $pm;
+    }
+}
+@media (max-width:480px){
+    .about{
+        margin: 50px 0;
+}}

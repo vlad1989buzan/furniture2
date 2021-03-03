@@ -1,0 +1,62 @@
+@import "_normalize.scss";
+@import "_variables";
+@import "block/header-top.scss";
+@import "block/header-bottom.scss";
+@import "block/main-slider.scss";
+@import "block/benefits.scss";
+@import "block/categories.scss";
+@import "block/about.scss";
+@import "block/questions";
+@import "block/links.scss";
+@import "block/footer.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: "Proxima Nova Bold";
+    color: $fcolor;
+    font-size: $fsize;
+    line-height: $flheight;
+}
+
+a {
+    text-decoration: none;
+    color: $fcolor;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 100%;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 125%;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 125%;
+    text-align: center;
+    color: $fcolor;
+
+    span {
+        position: relative;
+        
+    }
+    span::after {
+        content: "";
+        position: absolute;
+        background-color: $bgcolor;
+        width: 20px;
+        height: 50px;
+        left: -4px;
+        top: 5px;
+        z-index: -1;
+    }
+}

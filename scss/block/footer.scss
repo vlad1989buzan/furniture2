@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-info-main-links-copyright{
+    font-family: 'Proxima Nova Regular';
+}
+
+.footer-info-main-contacts-author{
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    a{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 3px;
+        }
+    }
+}
+
+@media(max-width:599px){
+    footer{
+        flex-direction: column;
+    }
+}

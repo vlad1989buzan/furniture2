@@ -1,0 +1,160 @@
+.links{
+    display: flex;
+    min-height: 520px;
+    position: relative;
+}
+
+.links-background-image{
+    background: url(../img/links/Rectangle176.png);
+    background-position: center;
+    background-size: cover;
+    flex: 0 1 1089px;
+    min-height: 520px;
+}
+
+.links-info{
+    background-color: $fcolor;
+    color: $fcolor2;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: $pm 2.92% 15px $pm;
+    a{
+        color: $fcolor2;
+    }
+}
+.links-info__logo{
+margin-bottom: 50px;
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 36px;
+        span::first-letter{
+            color: $bgcolor;
+
+        }
+    }
+    img{
+        margin-right: 15px;
+    }
+}
+.links-info-main{
+    display: flex;
+    margin-bottom: auto;
+}
+
+.links-info-main-links-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-right: 89px;
+    a{
+        text-transform: uppercase;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 3px;
+            left: -20px;
+            top: 9.5px;
+            background-color: $bgcolor;
+        }
+    }
+    ul:first-of-type{
+        margin-right: 55px;
+    }
+    li{
+        margin-bottom: 15px;
+    }
+}
+
+.links-info-main-contacts{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Proxima Nova Regular';
+    margin-right: 45px;
+    margin-left: auto;
+}
+
+.links-info-main-contacts-phone{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    a{
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        img{
+            margin-right: 7.25px;
+        }
+    }
+    a[href^="tel:"]{
+        color: $bgcolor;
+        margin-bottom: 5px;
+        font-family: 'Proxima Nova Bold';
+        img{
+            margin-right: 10px;
+        }
+    }
+    a:last-of-type{
+        margin-left: 34px;
+
+    }
+    
+}
+
+.links-info-main-contacts-social{
+    display: flex;
+    li:nth-child(n+2){
+display: inline-block;
+    }
+}
+
+#to-top{
+    position: absolute;
+    top: -24px;
+    left: 24px;
+}
+
+@media(max-width:1024px){
+    
+        .links-background-image{
+            display: none;
+            visibility: hidden;
+        }
+
+        .links-info{
+            flex-shrink: 1;
+
+        }
+       
+}
+
+@media(max-width:800px){
+    .links-info-main-links-nav{
+        flex-direction: column;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:599px){
+    .links-info-main{
+        flex-direction: column;
+    }
+    .links-info-main-contacts{
+margin-left: 0;
+    }
+    .links-info{
+        align-items: center;
+    }
+}
+@media(max-width:480px){
+    .links-info__logo{
+        margin-bottom: 25px;
+            a {
+               
+                font-size: 24px;
+}}}
